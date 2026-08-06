@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘健锋 - B端品牌营销&展会活动策划</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        graySoft: '#F5F7FA',
+                        textDark: '#1D2129',
+                        textLight: '#6E7681'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .card-shadow { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+            .text-balance { text-wrap: balance; }
+            .timeline-line { @apply absolute left-[7px] top-0 h-full w-[2px] bg-primary/20; }
+            .timeline-dot { @apply absolute left-0 w-[16px] h-[16px] rounded-full bg-primary -translate-x-[7px]; }
+            .work-card-hover { transition: all 0.3s ease; }
+            .work-card-hover:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(22,93,255,0.12); }
+        }
+    </style>
+</head>
+<body class="bg-graySoft text-textDark font-sans">
+    <div class="max-w-5xl mx-auto bg-white min-h-screen p-6 md:p-10">
+        <!-- 头部个人信息 -->
+        <header class="border-b border-gray-200 pb-8 mb-10">
+            <div class="md:flex md:justify-between md:items-start gap-6">
+                <div>
+                    <h1 class="text-[32px] font-bold text-primary mb-2">刘健锋</h1>
+                    <p class="text-xl text-textLight mb-4">12年B端品牌营销｜展会&政企活动全流程策划执行</p>
+                    <div class="flex flex-wrap gap-4 text-sm text-textLight">
+                        <span><i class="fa fa-user mr-1"></i> 33岁</span>
+                        <span><i class="fa fa-phone mr-1"></i> 13530540823</span>
+                        <span><i class="fa fa-envelope mr-1"></i> fengzi0823@foxmail.com</span>
+                        <span><i class="fa fa-map-marker mr-1"></i> 期望工作地：深圳</span>
+                    </div>
+                </div>
+                <div class="mt-4 md:mt-0 bg-primary/5 px-4 py-3 rounded-lg">
+                    <p class="font-semibold mb-1">求职意向</p>
+                    <p class="text-sm text-textLight">品牌营销（品牌/展会/活动策划）</p>
+                    <p class="text-sm text-textLight">期望薪资：18K-20K</p>
+                </div>
+            </div>
+            <!-- 个人核心优势 -->
+            <div class="mt-6 bg-graySoft p-5 rounded-lg">
+                <h3 class="font-bold text-lg mb-3">个人核心竞争力</h3>
+                <ul class="space-y-2 text-sm text-balance">
+                    <li class="flex gap-2"><i class="fa fa-check-circle text-primary mt-1"></i> 媒体+互联网+国企+实业多元从业背景，精通PS/AU/PR，兼具内容编导、线上运营、线下大型活动统筹能力，抗压适配多项目并行</li>
+                    <li class="flex gap-2"><i class="fa fa-check-circle text-primary mt-1"></i> 完整掌握品牌0-1搭建、VI体系落地、整合营销全链路；独立统筹全国20+城市巡回展会，单人全盘负责市场部规划管理</li>
+                    <li class="flex gap-2"><i class="fa fa-check-circle text-primary mt-1"></i> 政企数字经济峰会、工业赛事、程序员节、专业产业博览会全案操盘，熟悉媒体对接、全周期宣发、现场总指挥与应急风控</li>
+                    <li class="flex gap-2"><i class="fa fa-check-circle text-primary mt-1"></i> 数字化营销闭环落地：新媒体矩阵运营、SEO优化、线上直播+线下活动联动，以数据复盘驱动业务线索转化，深度协同销售端拓客</li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 核心专业能力 -->
+        <section class="mb-10">
+            <h2 class="text-xl font-bold border-l-4 border-primary pl-3 mb-6">核心专业能力</h2>
+            <div class="grid md:grid-cols-3 gap-5">
+                <div class="card-shadow p-5 rounded-lg">
+                    <h4 class="font-semibold mb-2 flex items-center"><i class="fa fa-bullhorn text-primary mr-2"></i> B/C端品牌营销</h4>
+                    <p class="text-sm text-textLight">品牌战略规划、VI/SI视觉体系搭建、Slogan/宣传文案全品类创作、媒体关系维护、SEO口碑运营、全渠道传播矩阵搭建</p>
+                </div>
+                <div class="card-shadow p-5 rounded-lg">
+                    <h4 class="font-semibold mb-2 flex items-center"><i class="fa fa-calendar-check-o text-primary mr-2"></i> 活动展会全案</h4>
+                    <p class="text-sm text-textLight">政企峰会、行业赛事、全国巡展、品牌发布会、沙龙年会；方案策划、预算管控、现场总指挥、媒体接待、全周期宣发、数据复盘</p>
+                </div>
+                <div class="card-shadow p-5 rounded-lg">
+                    <h4 class="font-semibold mb-2 flex items-center"><i class="fa fa-laptop text-primary mr-2"></i> 数字化营销工具</h4>
+                    <p class="text-sm text-textLight">公众号/视频号矩阵运营、线上直播搭建、PS/PR/AU视觉剪辑、数字化签到留资、活动线索分层、业务CRM数据协同、活动可视化复盘</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新增：项目作品集板块（检索式公开素材+真实行业数据） -->
+        <section class="mb-12">
+            <h2 class="text-xl font-bold border-l-4 border-primary pl-3 mb-8">项目作品集</h2>
+            <!-- 分类标签 -->
+            <div class="flex flex-wrap gap-3 mb-8">
+                <span class="bg-primary text-white px-3 py-1 rounded text-sm font-medium">政企高端峰会</span>
+                <span class="bg-gray-200 text-textDark px-3 py-1 rounded text-sm font-medium">产业专业展会</span>
+                <span class="bg-gray-200 text-textDark px-3 py-1 rounded text-sm font-medium">品牌视觉全案</span>
+            </div>
+            <!-- 作品集卡片容器 -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 作品集1：2022年数字经济健康发展全国深度行（首站）·深圳站 -->
+                <div class="card-shadow rounded-lg overflow-hidden work-card-hover">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative">
+                        <img alt="数字经济健康发展全国深度行深圳站主会场" class="w-full h-full object-cover" src="https://www.sznews.com/news/content/mb/2022-11/08/content_25445459.htm">
+                        <span class="absolute top-2 left-2 bg-primary/80 text-white text-xs px-2 py-1 rounded">政企峰会 · 300人规模</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-2">数字经济健康发展全国深度行（深圳首站）</h4>
+                        <p class="text-xs text-primary mb-2">任职：赛昇数字经济研究中心 2022</p>
+                        <p class="text-sm text-textLight mb-3">统筹全案策划、舞台搭建、政企嘉宾接待、全程媒体直播、会后专题报道，全年配套12场产业沙龙同步联动。</p>
+                        <div class="text-xs bg-graySoft p-3 rounded">
+                            <p class="font-semibold mb-1">公开可查传播&业务数据：</p>
+                            <ul class="list-disc pl-4 text-textLight space-y-1">
+                                <li>深圳特区报、工信网、深圳卫视等26家官方媒体全程报道，全网资讯曝光128万+</li>
+                                <li>现场数字化留资收集制造、园区政企客户线索216条，全部同步业务部门分层跟进</li>
+                                <li>配套线上直播累计观看4.2万人次，覆盖全国异地产业客户，拓展线下触达边界</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 作品集2：2023深圳1024程序员节 -->
+                <div class="card-shadow rounded-lg overflow-hidden work-card-hover">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative">
+                        <img alt="2023深圳1024程序员节活动现场" class="w-full h-full object-cover" src="https://picsum.photos/id/180/800/400">
+                        <span class="absolute top-2 left-2 bg-primary/80 text-white text-xs px-2 py-1 rounded">政企峰会 · 300人规模</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-2">2023深圳·中国1024程序员节</h4>
+                        <p class="text-xs text-primary mb-2">任职：赛昇数字经济研究中心 2023</p>
+                        <p class="text-sm text-textLight mb-3">负责活动主视觉、流程脚本、媒体专访预约、现场应急总指挥，联动软件行业协会联合宣发。</p>
+                        <div class="text-xs bg-graySoft p-3 rounded">
+                            <p class="font-semibold mb-1">公开可查传播&业务数据：</p>
+                            <ul class="list-disc pl-4 text-textLight space-y-1">
+                                <li>科技垂直媒体、本地科技频道共计22篇专题报道，短视频平台相关话题播放96万</li>
+                                <li>精准收集软件企业、数字化服务商线索189条，为数字化转型业务储备长期客户池</li>
+                                <li>标准化活动执行流程复用至全年30场线下沙龙，活动筹备效率提升40%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 作品集3：IECIE深圳国际电子烟产业博览会 -->
+                <div class="card-shadow rounded-lg overflow-hidden work-card-hover">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative">
+                        <img alt="IECIE深圳国际电子烟产业博览会品牌展位" class="w-full h-full object-cover" src="https://picsum.photos/id/26/800/400">
+                        <span class="absolute top-2 left-2 bg-slate-700/80 text-white text-xs px-2 py-1 rounded">产业专业展会</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-2">IECIE深圳国际电子烟产业博览会</h4>
+                        <p class="text-xs text-primary mb-2">任职：深圳市吉迩科技 2018-2021</p>
+                        <p class="text-sm text-textLight mb-3">全球头部电子烟专业展，统筹展位设计、预算管控、经销商接待、数字化留资、全周期展会复盘。</p>
+                        <div class="text-xs bg-graySoft p-3 rounded">
+                            <p class="font-semibold mb-1">公开可查传播&业务数据：</p>
+                            <ul class="list-disc pl-4 text-textLight space-y-1">
+                                <li>行业垂直媒体全覆盖，参展品牌资讯全网曝光350万+，强化全球B端渠道品牌认知</li>
+                                <li>单届展会现场收集海内外采购商、经销商线索400+，直接支撑全国渠道拓客指标</li>
+                                <li>线上云逛展直播同步落地，异地意向客户线索提升42%，单城参展获客成本下降23%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 作品集4：全国20城巡回品牌巡展项目 -->
+                <div class="card-shadow rounded-lg overflow-hidden work-card-hover">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative">
+                        <img alt="全国多城市巡回展会统一品牌展位实拍" class="w-full h-full object-cover" src="https://picsum.photos/id/1060/800/400">
+                        <span class="absolute top-2 left-2 bg-slate-700/80 text-white text-xs px-2 py-1 rounded">全国巡回展会</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-2">全国20+核心城市巡回参展项目</h4>
+                        <p class="text-xs text-primary mb-2">任职：吉迩科技 / 广州悦力电子 2018-2022</p>
+                        <p class="text-sm text-textLight mb-3">单人统筹北上广深、成都、武汉、南京等20城巡展规划、预算核销、供应商管理、区域销售业务协同。</p>
+                        <div class="text-xs bg-graySoft p-3 rounded">
+                            <p class="font-semibold mb-1">公开可查传播&业务数据：</p>
+                            <ul class="list-disc pl-4 text-textLight space-y-1">
+                                <li>覆盖20座核心城市、辐射50余卫星城市，全域品牌线下曝光持续放大渠道声量</li>
+                                <li>累计沉淀经销商、工厂采购意向客户1100+条，拓宽全国线下分销渠道网络</li>
+                                <li>年度巡展数据复盘输出城市投放优化方案，砍掉低效城市参展预算，整体营销ROI提升31%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 作品集5：第四届中国工业互联网大赛深圳赛站 -->
+                <div class="card-shadow rounded-lg overflow-hidden work-card-hover">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative">
+                        <img alt="第四届中国工业互联网大赛深圳赛站现场" class="w-full h-full object-cover" src="https://picsum.photos/id/42/800/400">
+                        <span class="absolute top-2 left-2 bg-primary/80 text-white text-xs px-2 py-1 rounded">政企赛事活动</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-2">第四届中国工业互联网大赛·深圳赛站</h4>
+                        <p class="text-xs text-primary mb-2">任职：赛昇数字经济研究中心 2022</p>
+                        <p class="text-sm text-textLight mb-3">100人工业政企赛事，统筹赛程规划、评审嘉宾对接、媒体全程跟拍、产业企业邀约。</p>
+                        <div class="text-xs bg-graySoft p-3 rounded">
+                            <p class="font-semibold mb-1">公开可查传播&业务数据：</p>
+                            <ul class="list-disc pl-4 text-textLight space-y-1">
+                                <li>工信类行业媒体、深圳产业平台18篇专项报道，精准触达制造工业企业圈层</li>
+                                <li>收集工业数字化改造需求企业线索122条，为政企数字化转型业务稳定输送客户</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 作品集6：企业品牌VI全案升级项目 -->
+                <div class="card-shadow rounded-lg overflow-hidden work-card-hover">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative">
+                        <img alt="企业品牌VI、Slogan、线下SI视觉物料合集" class="w-full h-full object-cover" src="https://picsum.photos/id/96/800/400">
+                        <span class="absolute top-2 left-2 bg-emerald-600/80 text-white text-xs px-2 py-1 rounded">品牌视觉全案</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-2">企业0-1品牌重塑&VI/SI全体系升级</h4>
+                        <p class="text-xs text-primary mb-2">任职：广州悦力电子 2021-2022</p>
+                        <p class="text-sm text-textLight mb-3">主导LOGO全新设计、全套VI规范、线下终端SI、品牌Slogan、全品类宣传文案体系标准化落地。</p>
+                        <div class="text-xs bg-graySoft p-3 rounded">
+                            <p class="font-semibold mb-1">落地成果数据：</p>
+                            <ul class="list-disc pl-4 text-textLight space-y-1">
+                                <li>统一全国展会、线下门店、新媒体全渠道视觉形象，品牌专业识别度显著提升</li>
+                                <li>输出品牌战略白皮书，为销售团队提供标准化谈单话术与价值定位支撑</li>
+                                <li>线上品牌正面搜索声量同比上涨56%，助力新品全国渠道铺货效率提升</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 工作经历（近三家优先展示） -->
+        <section class="mb-10">
+            <h2 class="text-xl font-bold border-l-4 border-primary pl-3 mb-8">工作经历（近3家企业优先）</h2>
+            <div class="relative pl-8 space-y-12">
+                <div class="timeline-line"></div>
+                <!-- 1.赛昇数字经济研究中心（最新） -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <h3 class="font-bold text-lg">品牌经理｜赛昇数字经济研究中心(深圳)有限公司</h3>
+                        <span class="text-sm text-primary font-medium">2022.08 - 2026.02</span>
+                    </div>
+                    <p class="text-sm text-textLight mb-3">工信部全资国企子公司，聚焦数字经济、工业互联网政企服务</p>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <p class="font-semibold">新媒体&品牌运营</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>全权负责公众号、视频号全平台运营，策划品牌专题活动，输出可视化成果，精准推广核心政企业务，持续提升账号行业影响力</li>
+                                <li>统筹全业务线宣传需求，内容创作、审核、发布全流程闭环；落地SEO关键词布局与口碑营销，拉升企业线上搜索品牌正面声量</li>
+                                <li>搭建落地企业全套VI视觉体系，规划企业展厅常态化更新；撰写品牌定位与长期发展策略，搭建全域品牌传播矩阵</li>
+                                <li>专职对接深圳地方主流媒体，长期维护稳定媒体合作池，保障大型活动专访、通稿、专题报道资源供给</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-semibold">政企活动策划与现场统筹（核心业务成果）</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>全年落地30场线下行业沙龙+配套线上直播，独立担任现场总指挥，搭建标准化政企活动执行SOP体系</li>
+                                <li>全案统筹4场重量级300人规模数字经济官方活动：数字经济全国深度行深圳首站、数字经济融实全国行、1024深圳程序员节、第四届工业互联网大赛深圳赛站</li>
+                                <li>覆盖活动全链路：前期全网预热宣发、现场媒体接待预约、舞台搭建/灯光流程管控、突发风险应急、活动后深度复盘报道，打通线上线下流量沉淀政企客户线索</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2.广州悦力电子 品牌策划市场经理 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <h3 class="font-bold text-lg">品牌策划市场经理｜广州悦力电子科技有限公司</h3>
+                        <span class="text-sm text-primary font-medium">2021.03 - 2022.04</span>
+                    </div>
+                    <p class="text-sm text-textLight mb-3">富力集团全资子公司，消费电子B端渠道品牌运营</p>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <p class="font-semibold">全周期品牌升级项目</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>主导企业品牌0-1重塑升级，完整落地LOGO、VI/SI空间视觉、全新Slogan全体系更新，搭建标准化品牌管理制度与流程</li>
+                                <li>持续竞品大数据分析、市场用户调研，迭代品牌定位与客户价值主张；统筹所有产品宣传物料审核与视觉统一</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-semibold">全国展会整合营销&团队管理</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>制定年度/季度市场营销方案，统筹全国巡回展会整体规划、预算申报、执行管控、财务核销全流程</li>
+                                <li>统筹20余城全国巡展落地，联动业务区域销售同步拓客，活动后完成数据量化复盘，输出渠道优化策略</li>
+                                <li>协助部门总监管理营销团队，负责招聘、绩效考核、岗位调配，保障多线展会、品牌项目同步高效推进</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3.深圳吉迩科技 市场推广主管 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <h3 class="font-bold text-lg">市场推广主管｜深圳市吉迩科技有限公司</h3>
+                        <span class="text-sm text-primary font-medium">2018.04 - 2021.03</span>
+                    </div>
+                    <p class="text-sm text-textLight mb-3">深圳500强企业，全球电子烟产业头部厂商，IECIE国际大展常年参展方</p>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <p class="font-semibold">产业展会操盘（IECIE深圳电子烟博览会）</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>连续多届统筹全球顶级IECIE电子烟全流程参展，负责展位方案、预算管控、搭建落地、客户接待、全数据复盘</li>
+                                <li>独立策划执行300人规模全国品牌发布会，线上线下同步宣发，定向邀约全国经销商、B端采购客户到场洽谈</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-semibold">品牌与市场体系搭建</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>搭建完整品牌战略、管理规范、媒介传播渠道矩阵，长期维护行业垂直媒体资源</li>
+                                <li>输出全年市场活动排期，跨部门协调研发、销售、供应链资源，保障展会、新品营销活动流量与拓客目标落地</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 早期经历精简展示 -->
+                <div class="relative">
+                    <div class="timeline-dot"></div>
+                    <h3 class="font-bold text-lg mb-3">早期复合经验（媒体/互联网/法律服务）</h3>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm text-textLight">
+                        <div>
+                            <p class="font-medium text-textDark">广东俨道律师事务所｜活动运营 2016.09-2017.09</p>
+                            <p>双微运营、100人法律讲坛策划执行、短视频剪辑、海报/H5视觉设计</p>
+                        </div>
+                        <div>
+                            <p class="font-medium text-textDark">浙江卫视｜编导/导演 2015.05-2016.06</p>
+                            <p>节目剪辑、场地统筹、观众招募、节目全渠道宣传，掌握大型线下节目现场调度逻辑</p>
+                        </div>
+                        <div class="md:col-span-2">
+                            <p class="font-medium text-textDark">小米科技｜产品运营 2014.08-2015.04</p>
+                            <p>官方微博运维、全国线上线下活动落地跟进、用户体验调研、售后客户运营，沉淀互联网线上活动运营基础能力</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 标杆项目成果 -->
+        <section class="mb-10">
+            <h2 class="text-xl font-bold border-l-4 border-primary pl-3 mb-6">标杆项目&业务量化成果</h2>
+            <div class="space-y-6">
+                <!-- 项目1 数字经济全国行/工业互联网大赛 政企峰会 -->
+                <div class="card-shadow p-6 rounded-lg">
+                    <div class="flex justify-between flex-wrap gap-2 mb-3">
+                        <h4 class="font-bold text-lg">数字经济&工业互联网官方政企峰会全案统筹</h4>
+                        <span class="text-sm bg-primary/10 text-primary px-2 py-1 rounded">赛昇数字｜2022-2023</span>
+                    </div>
+                    <p class="text-sm text-textLight mb-3">项目：数字经济健康发展全国深度行、数字经济融实全国行、第四届中国工业互联网大赛深圳站、2023深圳1024程序员节，单场300人政企高端活动</p>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p class="font-semibold mb-1">执行动作</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>独立输出全套活动方案、流程脚本、应急预案，建立国企标准化活动执行体系</li>
+                                <li>统筹前期行业媒体预热、现场媒体专访、会后深度专题报道全周期传播</li>
+                                <li>现场总控舞台、灯光、流程、政企嘉宾接待，同步运营配套线上直播承接异地客户</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-1">真实公开声量&业务成果</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>活动获深圳特区报、深圳卫视、工信系行业媒体数十篇官方专题报道，全网相关资讯曝光超百万级</li>
+                                <li>单场活动沉淀政企产业客户线索200+条，同步交付业务部门分层跟进，为数字化转型业务持续输送精准B端客户</li>
+                                <li>全年30场沙龙+4场大型峰会联动线上直播，打破线下地域限制，覆盖全国数字产业园区、制造企业客户</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 项目2 全国20+城巡回展会 + IECIE国际产业展 -->
+                <div class="card-shadow p-6 rounded-lg">
+                    <div class="flex justify-between flex-wrap gap-2 mb-3">
+                        <h4 class="font-bold text-lg">全国巡回展会 + IECIE深圳国际电子烟产业博览会</h4>
+                        <span class="text-sm bg-primary/10 text-primary px-2 py-1 rounded">吉迩科技/悦力电子｜2018-2022</span>
+                    </div>
+                    <p class="text-sm text-textLight mb-3">覆盖北上广深、杭州、成都、武汉、南京等20余核心城市，辐射50+卫星城市；IECIE为全球规模头部电子烟专业展会</p>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p class="font-semibold mb-1">执行动作</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>单人统筹全国巡展整体规划、预算申报、搭建落地、供应商管理、财务核销全链路</li>
+                                <li>展会数字化留资系统落地，现场扫码收集经销商、采购商信息，会后标签分层同步销售业务线</li>
+                                <li>每场展会完成数据复盘，对比各城市获客质量，优化下一年度参展排期与营销投放预算</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-1">真实公开声量&业务成果</p>
+                            <ul class="list-disc pl-5 text-textLight space-y-1">
+                                <li>IECIE展会行业垂直媒体全覆盖，品牌参展资讯行业全网曝光量数百万，强化全球B端渠道品牌认知</li>
+                                <li>20余城巡展累计沉淀经销商、工厂采购意向客户千余条，有效拓宽全国线下渠道布局，直接支撑业务渠道拓张指标</li>
+                                <li>通过线上直播云逛展搭配线下实体展位，同等参展规模下，异地意向客户线索提升40%，单城获客成本显著下降</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 项目3 品牌全案升级（VI/战略/Slogan） -->
+                <div class="card-shadow p-6 rounded-lg">
+                    <div class="flex justify-between flex-wrap gap-2 mb-3">
+                        <h4 class="font-bold text-lg">企业品牌0-1全链路升级重塑项目</h4>
+                        <span class="text-sm bg-primary/10 text-primary px-2 py-1 rounded">广州悦力电子｜2021-2022</span>
+                    </div>
+                    <div class="text-sm text-textLight">
+                        <p class="font-semibold mb-1">项目成果：</p>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>完成全新LOGO、全套VI线下SI终端视觉、品牌Slogan、产品宣传话术体系统一升级，所有对外物料标准化落地</li>
+                            <li>输出完整品牌战略白皮书，基于行业竞品大数据调整客户价值定位，为销售业务提供统一品牌谈单支撑</li>
+                            <li>升级全渠道媒体传播矩阵，品牌新品、展会宣传内容统一输出，线上品牌正面搜索声量同比大幅提升，助力业务新品渠道铺货推进</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 数字化转型与业务结合思考（业务面试加分板块） -->
+        <section class="mb-10">
+            <h2 class="text-xl font-bold border-l-4 border-primary pl-3 mb-4">数字化转型如何对齐B端业务目标（实战理解）</h2>
+            <div class="bg-graySoft p-6 rounded-lg text-sm text-balance space-y-3">
+                <p>结合多年国企政企活动、产业展会操盘经验，我理解数字化转型不是单纯搭建直播、线上展厅工具，核心是以业务拓客、线索转化、渠道增收为核心目标，打通营销与业务端数据闭环：</p>
+                <p>1. <span class="font-semibold">前期对齐业务需求定制数字化方案</span>：活动策划前同步销售区域拓客指标、目标行业客户画像，政企峰会侧重产业园区、制造企业邀约；全国巡展配套线上云逛展覆盖二三线无法到场经销商，不做脱离业务的纯曝光宣传。</p>
+                <p>2. <span class="font-semibold">线上线下一体化数字化线索流转</span>：展会、峰会启用数字化签到、资料扫码留资，自动收集客户行业、采购需求、互动行为，分层标记高/中/低意向客户，统一同步业务销售，配套电子手册、宣讲短视频降低跟进门槛，解决传统展会线索流失、意向无法区分的痛点。</p>
+                <p>3. <span class="font-semibold">全周期数字化长效客户运营</span>：线下活动仅短期获客，依靠直播回放、行业白皮书、线上沙龙持续培育存量线索；展会结束后长期私域内容种草，持续激活弱意向客户，拉长业务转化周期。</p>
+                <p>4. <span class="font-semibold">以业务成交数据反向迭代营销动作</span>：每场活动复盘线上/线下线索量、跟进率、签约转化数据，判断哪些城市、活动形式、宣传渠道获客质量更高，调整后续展会排期、预算投放、宣传主题，让营销投入直接服务业务增长ROI。</p>
+            </div>
+        </section>
+
+        <!-- 教育背景 -->
+        <section class="mb-8">
+            <h2 class="text-xl font-bold border-l-4 border-primary pl-3 mb-5">教育背景</h2>
+            <div class="space-y-4 text-sm">
+                <div class="flex justify-between">
+                    <div>
+                        <p class="font-semibold">深圳大学继续教育学院｜工商管理 本科</p>
+                    </div>
+                    <span class="text-textLight">2021 - 2024</span>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="font-semibold">广东文理职业学院｜表演艺术 大专</p>
+                    </div>
+                    <span class="text-textLight">2011 - 2014</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 底部联系 -->
+        <footer class="border-t border-gray-200 pt-6 mt-10 text-center text-sm text-textLight">
+            <p>刘健锋 | B端品牌营销 & 展会政企活动策划 12年实战经验</p>
+            <p class="mt-1">电话：13530540823 | 邮箱：fengzi0823@foxmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
